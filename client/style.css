@@ -95,31 +95,63 @@ a {
     align-self: center;
 }
 
-#uk {
-    position: relative;
-    bottom: -480px;
-    background: rgba(128,128,128,.15);
-    color: rgba(128,128,128);
-    padding-top: 0.1rem;
-    padding-bottom: 0.1rem;
-    border-style: outset;
+body {
+    overflow: hidden; /* Hide scrollbars */
+}
 
+#uk {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 8%;
+    bottom: 0;
+    position: absolute;
+    grid-template-areas: uk;
+    background: rgba(128,128,128, 0.15);
+    color: rgba(128,128,128);
+    border-bottom: outset;
+
+}
+#top-row {
+    display: grid;
+    grid-template-columns: 100px;
+    grid-template-rows: 50px;
+    grid-template-areas:
+    "uk";
+    padding-left: 1em;
 }
 
 
 #bottom-footer {
-display: grid;
-background: rgba(128,128,128,.15);
-    color: rgba(128,128,128);
-    padding-top: 0.1rem;
-    padding-bottom: 0.1rem;
-    position: relative;
-    bottom: -480px;
-    grid-template-columns: 80px 80px 120px 1fr 80px 80px 80px;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    bottom: 0;
+    position: absolute;
+}
+
+#left-footer {
+    display: grid;
+    grid-template-columns: 100px 100px 120px;
     grid-template-rows: 50px;
-    grid-template-areas: 
-    "advertising business search-works carbon privacy terms settings";
-    align-items: center;
+    grid-template-areas:
+    "advertising business search-works";
+    padding-left: 1em
+}
+
+#right-footer {
+    display: grid;
+    grid-template-columns: 70px 70px 70px;
+    grid-template-rows: 50px;
+    grid-template-areas: "privacy terms settings";
+    padding-right: 1em;
+}
+
+#center-footer {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 50px;
+    grid-template-areas: "carbon";
 }
 
 #advertising {
