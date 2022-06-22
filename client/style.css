@@ -108,18 +108,11 @@ a {
 
 
 #bottom-footer {
-display: grid;
-background: rgba(128,128,128,.15);
-    color: rgba(128,128,128);
-    padding-top: 0.1rem;
-    padding-bottom: 0.1rem;
-    position: relative;
-    bottom: -480px;
-    grid-template-columns: 80px 80px 120px 1fr 80px 80px 80px;
-    grid-template-rows: 50px;
-    grid-template-areas: 
-    "advertising business search-works carbon privacy terms settings";
-    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    bottom: 0;
+    position: absolute;
 }
 
 #advertising {
