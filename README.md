@@ -2,14 +2,14 @@
 LAP 1 - Google Challenge
 
 # Creators of Google Challenge
-Harry James & Saamiya Yousuf
+Harry Grant & Saamiya Yousuf
 
 # Installation and Usage
 
 Installation: 
 - Clone repo
-- npm install to install packages
 - cd server to move into the server folder
+- npm install to install packages
 - npm start to open server
 
 Usage: 
