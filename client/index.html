@@ -1,12 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <script defer src="../client/script.js"></script>
     <title>Google</title>
 </head>
+
 <body>
     <div id="navbar">
         <a href="#" id="about">About</a>
@@ -20,8 +23,10 @@
         <a href="#" id="logo-link"><img src="OfficialGoogleLogo.png" id="logo-style"></a>
         <input type="text" id="search">
         <div id="flexbox">
-            <button id="google-search-btn">Google Search</button><button id="random-search-btn">I'm Feeling
-                Lucky</button>
+            <form>
+                <button type="submit" id="google-search-btn"><a href="https://www.google.co.uk/" target="_blank">Google Search</a></button>
+                <button type="submit" id="random-search-btn">I'm Feeling Lucky</button>
+            </form>
         </div>
     </div>
     <div id="uk">
@@ -31,21 +36,23 @@
     </div>
 
     <div id="bottom-footer">
-        
-            <a href="advertising" id="advertising">Advertising</a>
-            <a href="business" id="business">Business</a>
-            <a href="search-works" id="search-works">How Search Works</a>
-            
-    
-            
-                <a href="carbon" id="carbon"><img src="leaf.png" height="15px" width="15px" id="leaf">Carbon neutral since 2007</a>
-            
-            
-                <a href="privacy" id="privacy">Privacy</a>
-                <a href="terms" id="terms">Terms</a>
-                <a href="settings" id="settings">Settings</a>
-            
-        </div>
-    
+
+        <a href="advertising" id="advertising">Advertising</a>
+        <a href="business" id="business">Business</a>
+        <a href="search-works" id="search-works">How Search Works</a>
+
+
+
+        <a href="carbon" id="carbon"><img src="leaf.png" height="15px" width="15px" id="leaf">Carbon neutral since
+            2007</a>
+
+
+        <a href="privacy" id="privacy">Privacy</a>
+        <a href="terms" id="terms">Terms</a>
+        <a href="settings" id="settings">Settings</a>
+
+    </div>
+
 </body>
+
 </html>
