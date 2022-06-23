@@ -23,10 +23,6 @@ app.get("/random", (req, res) => {
     res.json(random);
 });
 
-// app.get("/randomLink", (req, res) => {
-//     res.json(getRandomLink());
-// });
-
 app.get('/random/:id', (req, res) => {
     const id = req.params.id -1;
     if (id < random.length && id >= 0) {
