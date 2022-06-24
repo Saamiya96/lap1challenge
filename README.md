@@ -1,5 +1,5 @@
-# lap1challenge
-LAP 1 - Google Challenge
+# lap1challenge - Google Challenge
+Google Clone
 
 # Creators of Google Challenge
 Harry Grant & Saamiya Yousuf
@@ -13,7 +13,8 @@ Installation:
 - npm start to open server
 
 Usage: 
-- Click I'm Feeling Lucky to send you to a random page!
+- Type "review" in the search bar to see list of results
+- Click the I'm Feeling Lucky to send you to a random page of one of those results!
 
 
 # Changelog
@@ -27,7 +28,8 @@ Usage:
 - Great teamwork and communication
 - Happy with the outcome of our project 
 - The search engine is fully functional 
+- Tested our app.js file and passed with 100% coverage
 
 # Challenges
-- Tried to get testing sorted but the file path wasn't working
-- Connecting the server side with the front end took some time but through perserverance, we made it work!
+- Connecting the server side with the front end took some time 
+- Adding functionality to our buttons to output the results that aimed for but through perseverance, we made it work!
