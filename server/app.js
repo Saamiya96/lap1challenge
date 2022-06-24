@@ -23,24 +23,23 @@ app.get("/random", (req, res) => {
     res.json(random);
 });
 
-// app.get("/randomLink", (req, res) => {
-//     res.json(getRandomLink());
-// });
-
 app.get('/random/:id', (req, res) => {
-    const id = req.params.id -1;
+    const id = req.params.id - 1;
     if (id < random.length && id >= 0) {
         res.send(random[id])
         console.log(req)
     } else { //res.status(404).send(message)
-      res.json('error: Choose a number between 1 and 10')
+        res.json('error: Choose a number between 1 and 10')
     }
-  })
+})
 
-//  function getRandomLink() {
-//      let randomlink = random[Math.floor(Math.random() * random.length)]
-//      return randomlink
-//  }
+app.get("/randomlink", (req, res) => {
+    res.json(getRandomLink());
+});
 
+function getRandomLink() {
+    let randomlink = random[Math.floor(Math.random() * random.length)]
+    return randomlink
+}
 
 module.exports = app
