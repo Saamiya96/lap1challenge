@@ -1,6 +1,3 @@
-# lap1challenge - Google Challenge
-Google Clone
-
 # Creators of Google Challenge
 Harry Grant & Saamiya Yousuf
 
